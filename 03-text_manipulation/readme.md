@@ -501,7 +501,7 @@ satvik 80000
 ## Exercises 
 
 1. Search all sequences containing "Loxondota" in ``/home/student/lorem.txt``
-    > Flag : **GREP_ME_LOREM_FL4G**
+    > Flag : **BC{GREP_ME_LOREM_FL4G}**
 2. Copy the file /etc/passwd to your home directory. Display the line starting with ``student`` name.
     > Your commands : *(from /home):* ***cp /etc/passwd passwd.txt*** ; ***grep "^student" passwd.txt***
 3. Display the lines in the passwd file starting with login names of 3 or 4 characters.

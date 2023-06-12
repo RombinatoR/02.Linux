@@ -78,13 +78,13 @@ $ echo $PATH
 1. With the command ``which``, find the executable file nc and indicate the path
     > Path : ***/bin/nc***
 1. With the command ``which``, find the executable file becode. What is the flag ?
-    > Flag : **WH1CH_FL4G_EXECUTLE_FILE**
+    > Flag : **BC{WH1CH_FL4G_EXECUTLE_FILE}**
 1. Search with ``find ``command for a file that contains the name "Edgar Allan Poe". What is the flag ?
-    > Flag : **3d54r_4ll4n_P03_FL45**
+    > Flag : **BC{3d54r_4ll4n_P03_FL45}**
 1. Using the ``find`` command, find the file password.txt and specify the flag.
-    > Flag : **PASSWORD_FILE**
+    > Flag : **BC{PASSWORD_FILE}**
 1. With the command ``find``, find a file that starts with ``becode-`` and ends with ``.sh``.
-    > Flag : **FLAG_FIND_PARTIAL_PATH**
+    > Flag : **BC{FLAG_FIND_PARTIAL_PATH}**
 1. Using the ``find`` command to identify any file (not directory) modified in the last day, NOT owned by the root
 user and execute ls -l on them. **Chaining/piping commands is NOT allowed!**
     > Your command : ***find . -type f -mtime 0 ! -user root -exec ls -l {} \; 2>/dev/null***, with 2>/dev/null being throwing the *stderr* outputs to oblivion (/dev/null = void vacuum).
